@@ -1,15 +1,6 @@
 
 
-#
-#
-# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * start of CF.setup.py
-# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-#
-#
-
-
-from setuptools import find_packages
+# from setuptools import find_packages
 from setuptools import setup
 
 
@@ -17,26 +8,22 @@ setup(
   author="GaelicGrime",
   author_email="will.angus.blaylock@gmail.com",
   license="GPLv3",
-  name="runawayClock",
-  url="https://github.com/ComfortableSoftware/commonFunctions_py",
-  version="0.9.3-3",
-  package_dir={"runawayClock": "runawayClock"},
+  name="rclonerizer",
+  url="git@github.com:ComfortableSoftware/rclonerizer.git",
+  version="0.0.1",
+  package_dir={"rclonerizer": "rclonerizer"},
   package_data={
-      "runawayClock": [
+      "rclonerizer": [
           "../doc/*",
-          "BUTTONS_D/*",
-          "CLOCKS_D/*",
       ]
   },
-  packages=["runawayClock"],
-#  prefix="/home/will/.local",
+  packages=["rclonerizer"],
   install_requires=[
       "CF",
-      "PySimpleGUI",
   ],
   extras_require={
   },
-  scripts=["scripts/runawayClock"],
+  scripts=["scripts/rclonerizer"],
 #  entry_points = """
 #      [console_scripts]
 #      runawayClock=__main__:cli
